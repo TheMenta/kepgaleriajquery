@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+}
+
+.galeria{
+    margin:auto;
+    width: 50%;
+}
+
+.kep{
+    width: 100%;
+}
+.kep img{
+    width: 600px;
+}
+.galeria{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+footer{
+    text-align: center;
+}

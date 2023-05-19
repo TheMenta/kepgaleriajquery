@@ -1,8 +1,24 @@
 {
-    "images": [
-      "kepek/w14.jpeg",
-      "kepek/w142.jpg",
-      "kepek/toto.jpg"
-    ]
-  }
-  
+  "images": [
+    {
+      "path": "assets/kepek/w14.jpeg"
+    },
+    {
+      "path": "assets/kepek/w142.jpg"
+    },
+    {
+      "path": "assets/kepek/toto.jpg"
+    }
+  ],
+  "small-images": [
+    {
+      "path": "assets/kiskepek/w14.jpeg"
+    },
+    {
+      "path": "assets/kiskepek/w142.jpg"
+    },
+    {
+      "path": "assets/kiskepek/toto.jpg"
+    }
+  ]
+}

@@ -8,6 +8,15 @@
     },
     {
       "path": "assets/kepek/toto.jpg"
+    },
+    {
+      "path": "assets/kepek/mick.jpg"
+    },
+    {
+      "path": "assets/kepek/team.jpg"
+    },
+    {
+      "path": "assets/kepek/hamilton.jpg"
     }
   ],
   "small-images": [
@@ -19,6 +28,16 @@
     },
     {
       "path": "assets/kiskepek/toto.jpg"
+    },
+    {
+      "path": "assets/kiskepek/mick.jpg"
+    },
+    {
+      "path": "assets/kiskepek/team.jpg"
+    },
+    {
+      "path": "assets/kiskepek/hamilton.jpg"
     }
   ]
 }
+

@@ -1,47 +1,66 @@
-$(document).ready(function() {
-    var currentIndex = 0;
-    var images = [];
-    $.getJSON("../assets/Data/data.json", function(data) {
-        images = data.images;
-        console.log(images);
-    });
+*{
+    box-sizing: border-box;
+    background-color: #333333
     
-    $(".jobb").click(function() {
-        currentIndex = (currentIndex + 1) % images.length;
-        var currentImage = images[currentIndex].path;
-        $(".image-container").attr("src", currentImage);
-    });
-    
-    $(".bal").click(function() {
-        currentIndex = (currentIndex - 1 + images.length) % images.length;
-        var currentImage = images[currentIndex].path;
-        $(".image-container").attr("src", currentImage);
-    });
+}
+header {
+    padding: 10px;
+    text-align: center;
+}
+.logo img {
+    max-width: 150px;
+    height: auto;
+}
 
-    var smallImages = [];
 
-    $.getJSON("../assets/Data/data.json", function(data) {
-        smallImages = data["small-images"];
-        kiskepek(smallImages);
-    });
+.galeria{
+    background-color: #666666;
+    margin:auto;
+    width: 50%;
+}
 
-    $(".kiskep").on("click", ".image-container2", function() {
-        var index = $(".image-container2").index(this);
-        var currentImage = images[index].path;
-        $(".image-container").attr("src", currentImage);
-    });
-    
-  
-  });
-    function kiskepek(images) {
-        var kiskepDiv = $(".kiskep");
-        for (var i = 0; i < images.length; i++) {
-            var imagePath = images[i].path;
-            var imageElement = $("<img>").addClass("image-container2").attr("src", imagePath).attr("alt", "kiskep");
-            kiskepDiv.append(imageElement);
-        }
-        var imageCount = images.length;
-        var colClass = "col-" + Math.floor(12 / imageCount);
-        $(".image-container2").addClass(colClass);
-    }
+.kep{
+    width: 100%;
+}
+.kep img{
+    width: 600px;
+}
+.galeria{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+footer{
+    text-align: center;
+}
+.kiskep {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; 
+}
 
+.kiskep img {
+    width: 25%;
+    height: auto;
+    border: 5px solid #7FFF00;
+    object-fit: cover;
+    box-sizing: border-box;
+    padding: 5px;
+}
+.bal, .jobb {
+    background-color: #7FFF00; 
+    color: #000000; 
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.kep img {
+    max-width: 100%;
+    height: auto;
+    border: 5px solid #7FFF00;
+}
+
+footer {
+    text-align: center;
+    color: #FFFFFF; 
+}

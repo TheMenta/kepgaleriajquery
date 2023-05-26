@@ -34,13 +34,17 @@ footer{
 }
 .kiskep {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start; 
 }
 
 .kiskep img {
-    max-width: 100%;
+    width: 25%;
     height: auto;
+    border: 5px solid #7FFF00;
+    object-fit: cover;
+    box-sizing: border-box;
+    padding: 5px;
 }
 .bal, .jobb {
     background-color: #7FFF00; 
